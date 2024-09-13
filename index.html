@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jonathan's Portfolio</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/media_query.css">
+        <link rel="stylesheet" href="styles/projects.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/profile.css">
+        <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="styles/footer.css">
+
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/b1cd980965.js" crossorigin="anonymous"></script>
+        <!-- <script src="scripts/script.js" defer></script> -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript" src="scripts/sendEmail.js" defer></script>
+
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <h1>Jonathan Asprilla Saavedra</h1>
+                <h2>Fullstack Developer</h2>
+            </div>
+        </header>
+
+        <section id="about">
+            <div class="profile-pic">
+                <img src="img/profile.jpeg" alt="Profile Picture">
+            </div>
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet. <span class="highlight"><strong>Consectetur adipiscing elit</strong></span>, ut enim ad minim veniam, quis nostrud exercitation. Ullamco laboris nisi ut aliquip, <span class="highlight"><strong>ex ea commodo consequat</strong></span>.</p>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="projects-format-container">
+                <div class="projects-box">
+                    <div class="project-item">
+                        <a href="https://github.com/leezym/Tesis" class="project-item-link" target="_blank">
+                            <div class="project-item-bg"></div>
+                    
+                            <div class="project-item-title">
+                                Thesis Degree Project
+                            </div>
+                            <div class="project-item-tech">
+                                <span>Technologies:</span>
+                                <ul>
+                                    <li>Unity</li>
+                                    <li>C#</li>
+                                    <li>Firebase</li>
+                                    <li>Illustrator</li>
+                                    <li>Photoshop</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/totoaspri11a/Prueba-Equitel" class="project-item-link" target="_blank">
+                            <div class="project-item-bg"></div>
+                    
+                            <div class="project-item-title">
+                                Technical Project
+                            </div>
+                            <div class="project-item-tech">
+                                <span>Technologies:</span>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>React</li>
+                                    <li>Flask</li>
+                                    <li>MySQL</li><br/>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/totoaspri11a/files-hierarchy" class="project-item-link" target="_blank">
+                            <div class="project-item-bg"></div>
+                    
+                            <div class="project-item-title">
+                                Files Hierarchy Exercise
+                            </div>
+                            <div class="project-item-tech">
+                                <span>Technologies:</span>
+                                <ul>
+                                    <li>C</li>
+                                    <li>Makefile</li>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/totoaspri11a/Sisoper" class="project-item-link" target="_blank">
+                            <div class="project-item-bg"></div>
+                    
+                            <div class="project-item-title">
+                                Operative System Exercise
+                            </div>
+                            <div class="project-item-tech">
+                                <span>Technologies:</span>
+                                <ul>
+                                    <li>C</li>
+                                    <li>Makefile</li>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item">
+                        <a href="https://github.com/totoaspri11a/Analisys-and-Design-of-Algorithms" class="project-item-link" target="_blank">
+                            <div class="project-item-bg"></div>
+                    
+                            <div class="project-item-title">
+                                Analysis and Design of Algorithms
+                            </div>
+                            <div class="project-item-tech">
+                                <span>Technologies:</span>
+                                <ul>
+                                    <li>Python</li>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <!-- <form id="contact-form" action="#" method="POST"> -->
+                <form id="contact-form">
+                <div class="form-row">
+                    <input id="name" type="text" name="name" placeholder="Enter your name">
+                    <input id="email" type="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-row">
+                    <textarea id="message" name="message" placeholder="Enter a message"></textarea>
+                </div>
+                <button class="send-btn" type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- <button id="btn-generar" class="send-btn">Generar Frase Aleatoria</button> -->
+
+        <footer id="social-footer">
+            <div class="social-icons">
+                <!-- <p id="frase"></p> -->
+                <a href="https://www.linkedin.com/in/jonathan-asprilla/" target="_blank" class="social-icon linkedin">
+                    <img src="img/linkedin-white.png" alt="Linkedin">
+                </a>
+                <a href="https://www.instagram.com/totoaspri11a/?hl=es-la" target="_blank" class="social-icon instagram">
+                    <img src="img/instagram-white.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/totoaspri11a" target="_blank" class="social-icon github">
+                    <img src="img/github-white.png" alt="GitHub">
+                </a>
+            </div>
+        </footer>        
+    </body>
+</html>

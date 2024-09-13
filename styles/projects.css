@@ -1,0 +1,189 @@
+/* Projects Styles */
+#projects {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 5px; 
+    padding-left: 10em;
+    padding-right: 10em; 
+    background-color:#f5f5f5;
+    max-width: 100%;
+}
+
+#projects h1 {
+    color: #d87c03;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2.57rem;
+    margin-bottom: 2em;
+    margin-top: -0.3em;
+}
+
+.projects-format-container {
+    width: 71.25em;
+    
+    margin: 0 auto;
+  }
+  
+  .projects-box {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  
+    padding: 50px 0;
+  }
+  .project-item {
+    flex-basis: calc(33.33333% - 30px);
+  
+    margin: 0 15px 30px;
+  
+    overflow: hidden;
+  
+    border-radius: 28px;
+  }
+
+  .project-item-link {
+    background-size: cover;
+    background-position: center;
+    display: block;
+    padding: 30px 20px;
+  
+    text-decoration: none;
+    overflow: hidden;
+  
+    position: relative;
+  }
+
+  .project-item:nth-child(1n) .project-item-link {
+    background-image: url('../img/project-1.jpg');
+  }
+  .project-item:nth-child(2n) .project-item-link {
+    background-image: url('../img/project-2.jpg');
+  }
+  .project-item:nth-child(3n) .project-item-link {
+    background-image: url('../img/project-3.jpg');
+  }
+  .project-item:nth-child(4n) .project-item-link {
+    background-image: url('../img/project-4.jpg');
+  }
+  .project-item:nth-child(5n) .project-item-link {
+    background-image: url('../img/project-5.png');
+  }
+  .project-item:nth-child(6n) .project-item-link {
+    background-image: url('../img/project-6.png');
+  }
+  .project-item:nth-child(7n) .project-item-link {
+    background-image: url('../img/project-7.png');
+  }
+  .project-item:nth-child(8n) .project-item-link {
+    background-image: url('../img/project-8.png');
+  }
+
+  .project-item-link:hover,
+  .project-item-link:hover .project-item-title,
+  .project-item-link:hover .project-item-tech {
+    text-decoration: none;
+    color: #FFF;
+  }
+  .project-item-link:hover .project-item-bg {
+    transform: scale(10);
+  }
+  .project-item-title {
+    min-height: 87px;
+    margin: 0 0 25px;
+    text-decoration: none;
+    overflow: hidden;
+    
+    font-family: 'Roboto', sans-serif;	;
+    font-weight: 500;
+    font-size: 1.78em;
+    color: transparent;
+  
+    z-index: 2;
+    position: relative;
+  }
+  .project-item-tech {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    color: transparent;
+  
+    z-index: 2;
+    position: relative;
+  }
+
+  .project-item-tech span {	
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-left: -6.7em;
+}
+  
+
+  .project-item-bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+  
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+  
+    border-radius: 21%;
+    transition: all .5s ease;
+  }
+  .project-item:nth-child(2n) .project-item-bg {
+    background-color: #e44002;
+  }
+  .project-item:nth-child(3n) .project-item-bg {
+    background-color: #3ecd5e;
+  }
+  .project-item:nth-child(4n) .project-item-bg {
+    background-color: #952aff;
+  }
+  .project-item:nth-child(5n) .project-item-bg {
+    background-color: #4c49ea;
+  }
+  .project-item:nth-child(6n) .project-item-bg {
+    background-color: #cd3e94;
+  }
+  .project-item:nth-child(7n) .project-item-bg {
+    background-color: #34dbf9;
+  }
+  .project-item:nth-child(8n) .project-item-bg {
+    background-color: #e40202;
+  }
+  
+  
+  
+  @media only screen and (max-width: 979px) {
+    .project-item {
+      flex-basis: calc(50% - 30px);
+    }
+    .project-item-title {
+      font-size: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .projects-format-container {
+      width: 96%;
+    }
+  
+  }
+  @media only screen and (max-width: 639px) {
+    .project-item {
+      flex-basis: 100%;
+    }
+    .project-item-title {
+      min-height: 72px;
+      line-height: 1;
+  
+      font-size: 24px;
+    }
+    .project-item-link {
+      padding: 22px 40px;
+    }
+    .project-item-title,
+    .project-item-tech {
+      font-size: 16px;
+    }
+  }

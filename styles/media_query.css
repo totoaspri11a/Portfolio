@@ -1,0 +1,61 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        top: 1em;
+        right: 21%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .header-content {
+        margin-top: 26vh;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .header-content {
+        padding: 1em;
+        border-radius: 0.5em; 
+        margin-top: 20vh; 
+    }
+
+    .header-content h1 {
+        font-size: 2rem; 
+    }
+
+    .header-content h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-content {
+        padding: 0.75em;
+        border-radius: 0.5em;
+        margin-top: 30vh;
+    }
+
+    .header-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .header-content h2 {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .header-content {
+        padding: 0.5em;
+        border-radius: 0.375em;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-content h2 {
+        font-size: 1rem;
+    }
+}

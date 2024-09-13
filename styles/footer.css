@@ -1,0 +1,56 @@
+/* Footer Styles */
+#social-footer {
+    background-color: #4B1818;
+    padding: 3em 0;
+    height: 3em;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 71px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.linkedin {
+    background-color: #4267B2;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FED576);
+}
+
+.github {
+    background-color: #333;
+}
+
+#btn-generar {
+    display: block;
+    margin: 0 auto;
+}
+
+#frase {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+}
